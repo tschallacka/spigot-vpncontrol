@@ -1,8 +1,9 @@
 ## VPN CONTROL ##
 
-Denies entry to people who use VPN, unless they are put on a whitelist.
-This plugin requires a mysql database.
+Denies entry to people who use VPN, unless they are put on a whitelist.  
+This plugin requires a mysql/mariadb database.
 
+#Creating a mysql/mariadb database on linux or the windows linux subsystem
 ```
 sudo su root
 
@@ -22,9 +23,9 @@ quit
 
 Enter the database name, username and password in the plugin config.
 
-Commands:
+#Commands:
 
-/vpncontrol whitelist add <playername> - Adds a player to the whitelist for people who are allowed to use a vpn
-/vpncontrol whitelist remove <playername> - Removes a player from the whitelist
-/vpncontrol whitelist status <playername> - Gets the status of a player on the whitelist
-/vpncontrol refresh - Deletes all whitelist entries in the database, loads new from github. 
+*/vpncontrol whitelist add <playername>* - Adds a player to the whitelist for people who are allowed to use a vpn  
+*/vpncontrol whitelist remove <playername>* - Removes a player from the whitelist  
+*/vpncontrol whitelist status <playername>* - Gets the status of a player on the whitelist  
+*/vpncontrol refresh* - Deletes all whitelist entries in the database, loads new from github. 
