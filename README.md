@@ -33,8 +33,8 @@ Enter the database name, username and password in the plugin config.
 ### Java and mysql
 
 It may be that there is no mysql connector installed for java on your server host.  
-If this is the case when you try to load the server with the plugin installd you'll get an error like this:  
-```Caused by java.alng.RuntimeException: Can't load resource bundle due to underlying exception java.util.MissingResourceException: Can't find bundle for base name com.mysql.cj.LocalizeErrorMessages, locale```  
+If this is the case when you try to load the server with the plugin installed you'll get an error like this:  
+```Caused by java.lang.RuntimeException: Can't load resource bundle due to underlying exception java.util.MissingResourceException: Can't find bundle for base name com.mysql.cj.LocalizeErrorMessages, locale```  
 
 ![Example of error message](https://i.imgur.com/si4b0UW.png)  
 
