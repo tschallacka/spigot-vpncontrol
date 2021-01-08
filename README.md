@@ -33,9 +33,15 @@ Enter the database name, username and password in the plugin config.
 ### Java and mysql
 
 It may be that there is no mysql connector installed for java on your server host.  
+If this is the case when you try to load the server with the plugin installd you'll get an error like this:  
+```Caused by java.alng.RuntimeException: Can't load resource bundle due to underlying exception java.util.MissingResourceException: Can't find bundle for base name com.mysql.cj.LocalizeErrorMessages, locale```  
+
+![Example of error message](https://i.imgur.com/si4b0UW.png)  
+
 To install it ssh into your server and execute the command `sudo apt-get install libmariabd-java`
 
 Should this not work, giving a message *"Unable to locate package libmariadb-java"*, like on some debian buster servers, download libmaria-db from a server here: https://packages.debian.org/buster/all/libmariadb-java/download  
+
 Upload it to your server and run `sudo dpkg -i libmaria*.deb && sudo apt-get -f install`
 
 ### Configuration
