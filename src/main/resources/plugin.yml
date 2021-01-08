@@ -1,0 +1,19 @@
+name: VpnControl
+version: ${project.version}
+main: tschallacka.de.spigot.vpncontrol.VpnControl
+api-version: 1.13
+authors: [Tschallacka]
+description: Gives control over which users can use a VPN to access the server
+website: https://www.tschallacka.de
+commands:
+  vpncontrol:
+    description: Add and remove users from whitelist for via vpn access to the server
+    usage: /<command> refresh|whitelist add|remove|status <playername>
+    permission: vpncontrol.whitelist
+permissions:
+  vpncontrol.whitelist:
+    default: op
+  vpncontrol.refresh:
+    default: op
+  vpncontrol.notify:
+    default: op
