@@ -38,7 +38,7 @@ If this is the case when you try to load the server with the plugin installed yo
 
 ![Example of error message](https://i.imgur.com/si4b0UW.png)  
 
-To install it ssh into your server and execute the command `sudo apt-get install libmariabd-java`
+To install it ssh into your server and execute the command `sudo apt-get install libmariadb-java`
 
 Should this not work, giving a message *"Unable to locate package libmariadb-java"*, like on some debian buster servers, download libmaria-db from a server here: https://packages.debian.org/buster/all/libmariadb-java/download  
 
